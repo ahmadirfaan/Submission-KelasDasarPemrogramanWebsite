@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2,h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+table td {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.fa-bars {
+    visibility: hidden
+}
+
+nav a, footer a {
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+    color: black;
+}
+
+aside a {
+    color: #000000;
+}
+
+main {
+    padding: 20px;
+    overflow: auto ;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+header {
+    width: 100%;
+    font-family: monospace;
+}
+
+.jumbotron {
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+    color: black;
+    opacity: 0.8;
+ }
+
+.tulisan-miring {
+    font-style: italic;
+}
+
+nav {
+    background-color: #d6effc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+.card > p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+
+aside > p {
+    text-align: justify;
+}
+.card > p {
+    text-indent: 5%;
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+.feature-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover ;
+    object-position: initial ;
+ }
+
+.profile header {
+    text-align: center;
+}
+
+
+#content {
+    float: left;
+    width:75%;
+}
+
+#content-tambahan {
+    float: left;
+}
+
+.berlangganan, .video {
+    float:left;
+    width:100%;
+}
+
+.berlangganan {
+    background-color: #98ADA0;
+    font-family: sans-serif;
+}
+.video a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #98ADA0;
+    font-family: sans-serif;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    color: #98ADA0;
+    height: 38px;
+    padding: 12px 10px 12px 20px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-style: solid;
+}
+
+.address {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+    width: 70%;
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 9px 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.videowrapper { 
+    float: none; 
+    clear: both; 
+    width: 100%; 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 25px; 
+    height: 0; 
+} 
+
+.videowrapper iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#video-raung {
+    width:50%;
+    float:left;
+}
+
+#video-penanggungan {
+    width:47%;
+    float:right;
+    margin-left:3%
+}
+
+aside {
+    padding-left: 20px;
+    float: right;
+    width: 25%
+}
+
+table td {
+    font-size: 15px;
+}
+
+footer {
+    background-color: dimgrey;
+    padding: 20px;
+}
+
+footer ul {
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    height: 30px;
+    display: flex;
+}
+
+footer p {
+    color: white;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+#navigasitop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: black;
+    padding: 15px;
+}
+   
+   
+#navigasitop:hover {
+    background-color:green;
+}
+
+@media screen and (max-width:1024px) {
+
+    #content,
+    #content-tambahan,
+    aside,
+    #video-raung,
+    #video-penanggungan {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        background-color: #d6effc;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figure {
+        font-size: 12px;
+    }
+
+    table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table td {
+        font-size: 0.8em;
+    }
+
+    .feature-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain ;
+        object-position: initial ;
+     }
+
+     
+
+
+
+}
